@@ -1,5 +1,3 @@
-import jdk.javadoc.internal.doclets.formats.html.markup.HtmlStyle
-
 interface Saveable {
     fun save()
 }
@@ -19,7 +17,7 @@ class MonthlyReport(
     val totalIncome: Long,
 ) : Saveable {
     override fun save() {
-        println("Сохраняю отчёт \"${HtmlStyle.title}\" с доходом $totalIncome")
+        println("Сохраняю отчёт \"$title\" с доходом $totalIncome")
     }
 }
 
@@ -32,8 +30,6 @@ class GameStatistics(
         println("Сохраняю статистику игрока $playerName: $score очков")
     }
 }
-
-
 
 fun saveAll(items: List<Saveable>) {
     for (item in items) {

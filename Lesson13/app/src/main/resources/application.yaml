@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: lesson1
+
+app:
+  info:
+    name: "Spring-Service-2026"
+    version: "4.0.1"
+    features: ["Kotlin", "Coroutines", "Native-Image"]
+
+greeting: Adios
+
+service:
+  max-records: 5
+  banned-names:
+    - "Admin"
+    - "Root"
+  allowed-categories:
+    - "A"
+    - "B"

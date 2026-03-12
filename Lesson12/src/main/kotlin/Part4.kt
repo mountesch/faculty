@@ -9,6 +9,8 @@ data class DownloadStats(
     val failureCount: Int
 )
 
+
+
 object ImageDownloader {
     fun run(urls: List<String>, outputDir: String): DownloadStats = runBlocking {
         val dir = File(outputDir)
